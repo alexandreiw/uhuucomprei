@@ -1,0 +1,460 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 4rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+
+  --first-color: #FECCCB;
+  --first-color-dark: #ffb3b1;
+  --second-color-light: #D2D2D2;
+  --second-color: #868686;
+  --text-color: #3b3b3b;
+  --body-color: #fbfbfb;
+  --title-color: #202020;
+  --second-color-gradient: linear-gradient(45deg, #868686 0%, #d2d2d2 50%, #f5f5f5 100%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-normal: 400;
+  --font-semi-bold: 500;
+  --font-bold: 600;
+
+  /*========== z index ==========*/
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h2-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--second-color-dark);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+  transition: .4s;
+}
+
+.main {
+  overflow: hidden;
+  /* For the animations */
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  transition: .4s;
+}
+
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 6.25rem;
+  /* 100px */
+}
+
+.nav__toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+
+  .nav__menu {
+    position: fixed;
+    background: rgba(251, 251, 251, .6);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    border-left: 2px solid var(--first-color);
+    box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    transition: right .4s ease;
+  }
+}
+
+.nav__list {
+  padding: 5rem 0 0 3rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.nav__link {
+  position: relative;
+  font-size: var(--small-font-size);
+  letter-spacing: 1px;
+  color: var(--title-color);
+  transition: color .3s ease;
+}
+
+.nav__link::before {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  bottom: -.75rem;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background-color: var(--first-color);
+  transition: opacity .3s ease;
+}
+
+.nav__link:hover {
+  color: var(--second-color);
+}
+
+.nav__link:hover::before {
+  opacity: 1;
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+/* Show menu */
+.show-menu {
+  right: 0;
+}
+
+/* Active link */
+.active-link {
+  position: relative;
+  color: var(--second-color-dark);
+}
+
+.active-link::before {
+  content: '';
+  position: absolute;
+  bottom: -.75rem;
+  width: 100%;
+  height: 5px;
+  height: 1px;
+  background-color: var(--first-color-dark);
+}
+
+/* Change background header */
+.scroll-header {
+  background: var(--second-color-gradient);
+  box-shadow: -2px 2px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*=============== HOME ===============*/
+.home {
+  position: relative;
+  /* min-height: 100vh; */
+}
+
+.home__info {
+  display: grid;
+  row-gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.home__container {
+  position: relative;
+  padding: 7rem 0 2rem;
+}
+
+.home__title {
+  font-family: "Kaushan Script", cursive;
+  text-transform: uppercase;
+  font-size: var(--biggest-font-size);
+  margin-bottom: .75rem;
+}
+
+.home__description {
+  color: var(--second-color);
+  margin-bottom: 1.5rem;
+}
+
+.home__group {
+  position: relative;
+}
+
+.home__image {
+  display: flex;
+  justify-content: center;
+}
+
+.home__img {
+  width: 390px;
+  /* 17.5rem */
+}
+
+.home__img img {
+  filter: drop-shadow(0 4px 32px rgba(59, 59, 59, 0.5));
+  /* animation: float-eth 4s ease-in-out infinite; */
+}
+
+.home__social {
+  position: absolute;
+  display: grid;
+  top: -4.5rem;
+  right: 0rem;
+  row-gap: 1rem;
+}
+
+.home__social-icon {
+  display: inline-flex;
+  font-size: 1.25rem;
+  color: var(--second-color-dark);
+  padding: .8rem;
+  border-radius: .5rem;
+  box-shadow: -6px 6px 12px 0px rgba(0, 0, 0, 0.1);
+  transition: .4s ease;
+}
+
+.home__social-icon:hover {
+  color: var(--first-color);
+  background: var(--second-color);
+}
+
+.home__footer,
+.home__footer-time {
+  display: flex;
+}
+
+.home__footer {
+  margin-top: 2.5rem;
+}
+
+.home__footer-title,
+.home__footer-subtitle {
+  color: var(--second-color);
+  font-size: var(--smaller-font-size);
+  display: block;
+}
+
+.home__footer-title {
+  /* margin-bottom: .75rem; */
+}
+
+.home__footer-number {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+}
+
+.home__footer-number span {
+  font-size: var(--smaller-font-size);
+}
+
+/* Shapes */
+.home__triangle {
+  position: absolute;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.shape-top {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(135deg, #868686 1%, #fbfbfb 30%);
+}
+
+.shape-bottom {
+  width: 100%;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #FFB3B1 1%, #Fbfbfb 30%);
+  transform: rotate(180deg);
+}
+
+/* 
+.home__bg-flower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  object-fit: cover;
+  opacity: .2;
+  z-index: 0;
+}
+ */
+/* Animation ethereum */
+
+@keyframes float-eth {
+  0% {
+    transform: translateY(.5rem);
+  }
+
+  50% {
+    transform: translateY(2rem);
+  }
+
+  100% {
+    transform: translateY(.5rem);
+  }
+}
+
+/*=============== BUTTONS ===============*/
+
+.button {
+  text-transform: uppercase;
+  color: var(--second-color-dark);
+  padding: 1rem 3rem;
+  background: linear-gradient(0deg, #fecccb 0%, #fbfbfb 100%);
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: .4s;
+}
+
+.button-flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.button:hover {
+  color: var(--second-color);
+  box-shadow: -5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .home__img {
+    width: 250px;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2rem;
+  }
+
+  .nav__link {
+    font-size: var(--smaller-font-size);
+  }
+
+  .home__container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+  }
+
+  .home__img {
+    width: 370px;
+  }
+
+  .home__social {
+    top: -1.5rem;
+  }
+
+  .home__footer {
+    margin-top: 0;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1023px) {
+  .nav__link {
+    font-size: var(--small-font-size);
+  }
+
+  .home__title {
+    margin-bottom: 1rem;
+  }
+
+  .home__description {
+    margin-bottom: 3rem;
+  }
+
+  .home__img {
+    width: auto;
+  }
+
+  .home__social {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1048px) {
+  .container {
+    margin-inline: auto;
+  }
+}
