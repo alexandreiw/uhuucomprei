@@ -1,0 +1,109 @@
+#===== HEADER =====#
+
+- Logo
+
+#===== MENU =====#
+- home
+- sobre
+- como funciona
+- beneficios
+- login
+- assinar
+
+#===== HOME =====#
+- Titulo
+  Seu estilo chegando em casa
+- Subtitulo
+  Tenha a chance de aproveitar o melhor de você
+- 1 mês grátis
+- Button ASSINAR
+- redes sociais 
+  siga-nos - facebook - Instagram
+
+#====== SOBRE ======#
+- A Uhuu Comprei é uma consultoria de estilo online, focado
+  em mudar teu estilo, conforme sua necessidade. Seja uma
+  mulher diferente a cada dia, aumentando sua confiança,
+  autoestima e construindo uma imagem que você quer transmitir
+  a cada ocasião
+
+#===== 	STEPS =====#
+
+-- Assinatura 01
+  - Faça sua assinatura Uhuu Comprei 
+    e receba todo mês sua box. Valor 
+    da assinatura R$18,99 por mês, essa 
+    taxa será descontada no valor da 
+    Uhuu Box do mês (entrará como desconto), 
+    valor não acumulativo. 
+
+-- Me fala sobre você 02
+   - Tá em dúvida em qual é o seu perfil? 
+     Deixa com a gente da Uhuu Comprei. 
+     Nossas consultoras de imagem irão 
+     encontrar o melhor look para sua ocasião. 
+     Vamos querer saber mais sobre seus gostos, 
+     estilos e biótipo, assim enviaremos a 
+     box Uhuu Comprei que é a " sua cara ".
+
+-- Sua box 03
+   - Você vai receber sua Uhuu Comprei Box 
+     cheia de looks e estilo, e o melhor, 
+     só vai pagar pelas peças que gostar, 
+     ou devolver todas sem compromisso de 
+     compra.
+
+-- Sua box em casa 04
+   -Receba sua Uhuu Comprei em casa sem custo 
+    de frete. Nosso Uhuu motorista irá fazer a 
+    entrega em data e local agendado. Após 3 dias 
+    com horário e data programada nosso 
+    Uhuu motorista irá fazer a retirada das 
+    mercadorias restantes, tudo isso no conforto 
+    e segurança do seu lar ou local a escolher
+
+#===== BENEFICIOS =====#
+
+-- Economia de tempo e comodidade
+   - A melhor forma de agilizar seu tempo. 
+     Fuja de filas e burocracia. Com a sua 
+     Uhuu Comprei, você terá atendimento 
+     exclusivo. Nossas consultoras de imagem, 
+     irão escolher looks pensados especialmente 
+     para a ocasião que você desejar. 
+     Tudo isso com roupas de alta qualidade e 
+     baixo custo.
+
+-- Respeito pelo seu estilo
+   - Nossas consultoras de imagem, irão selecionar 
+     os looks conforme suas necessidades mensais. 
+     Ela irá avaliar teu estilo, gosto, biotipo e estrutura 
+     corporal.
+
+-- Economia financeira
+   - Com a assinatura recorrente da sua Uhuu Comprei, 
+     por apenas R$18,99 você terá mensalmente um serviço 
+     especializado, exclusivo e pensado em você. 
+     E no primeiro mês você terá a experiência da 
+     Uhuu comprei chegando em casa, gratuitamente. 
+     Você terá atendimento personalizado, frete grátis, 
+     motorista com entrega agendada e looks de alta 
+     qualidade e baixo custo. E ainda terá o desconto 
+     da mensalidade voltado a peça adquirida ou no 
+     total da compra.
+
+-- Atendimento personalizado
+   - A Uhuu Comprei, pensou em cada detalhe para te dar 
+     o melhor conforto exclusividade de atendimento. 
+     Sem a frieza do e-commerce, nossas consultoras de 
+     imagem estarão disponíveis para atendimento via 
+     Whatsapp, e demais canais digitais. De segunda-feira 
+     à sexta-feira das 9:00hs às 19:00hs Sábados, domingos 
+     e feriados das 9:00hs às 17:00hs.
+
+#===== FOOTER =====#
+
+- logo
+- 
+- redes sociais
+- Todos os direitos reservados 2020
