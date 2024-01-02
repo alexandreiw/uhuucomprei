@@ -288,6 +288,7 @@ button {
   font-family: 'Kaushan Script', cursive;
   text-transform: uppercase;
   font-size: var(--biggest-font-size);
+  line-height: 1.1;
 }
 
 .home__description {
